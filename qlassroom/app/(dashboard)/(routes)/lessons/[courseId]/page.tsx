@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import { useMemo } from 'react';
 import styles from '../../../../styles/lessonpage.module.css'; // Update the path according to your structure
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -44,7 +45,9 @@ const LessonPage: React.FC = () => {
     // Define other courses similarly
   };
 
-  const currentLessons = courseId && lessons[courseId] ? lessons[courseId] : [];
+  const currentLessons = useMemo(() => {
+    return courseId && lessons[courseId] ? lessons[courseId] : [];
+  }, [courseId, lessons]);
 
   useEffect(() => {
     console.log('Course ID:', courseId);

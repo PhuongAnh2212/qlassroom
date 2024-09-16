@@ -10,7 +10,7 @@ const About = () => {
         <h2 className={styles.subtitle}>Introduction</h2>
         <p className={styles.text}>
           Our Learning Management System (LMS) is designed to provide a comprehensive platform
-          for online education and training. Whether you're a student, teacher, or administrator,
+          for online education and training. Whether you&#39;re a student, teacher, or administrator,
           our platform makes it easy to create, manage, and participate in learning experiences
           from anywhere.
         </p>
@@ -32,7 +32,7 @@ const About = () => {
         <p className={styles.text}>
           Our LMS enhances the learning experience by providing easy access to courses and resources,
           enabling collaboration, and offering tools for both synchronous and asynchronous learning.
-          Whether you’re a large institution or an individual learner, our platform can be tailored
+          Whether you&#39;re a large institution or an individual learner, our platform can be tailored
           to meet your needs.
         </p>
       </section>

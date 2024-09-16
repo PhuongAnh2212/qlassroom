@@ -16,7 +16,7 @@ export default function Home() {
         <div className={styles.logo}>
           <Logo width={200} height={200} />
         </div>
-        <p className={styles.subheading}>We're glad to have you here!</p>
+        <p className={styles.subheading}>We&#39;re glad to have you here!</p>
         <Button className="bg-[#01AF3E] hover:bg-[#004F2A] text-white font-bold py-2 px-4 rounded-full shadow-lg text-lg"
             variant="ghost"
             onClick={handleClick}>

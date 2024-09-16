@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { db } from "../../../../../lib/db";
 import styles from "../../../../../styles/courseId.module.css";
 import { TitleForm } from "./_components/title-form";
-import { ChaptersForm } from "./_components/chapters-form";
+// import { ChaptersForm } from "./_components/chapters-form";
 
 const CourseIdPage = async ({
   params,
@@ -21,13 +21,13 @@ const CourseIdPage = async ({
       id: params.courseId,
       userId, 
     },
-    include: {
-      chapters: {
-        orderBy: {
-          position: "asc",
-        },
-      },
-    },
+    // include: {
+    //   chapters: {
+    //     orderBy: {
+    //       position: "asc",
+    //     },
+    //   },
+    // },
   });
 
   // Redirect if the course doesn't exist
@@ -40,7 +40,7 @@ const CourseIdPage = async ({
     course.title,
     course.description,
     course.categoryId, 
-    course.chapters.some(chapter => chapter.isPublished)
+    // course.chapters.some(chapter => chapter.isPublished)
   ];
   const totalFields = requiredFields.length;
   const completedFields = requiredFields.filter(Boolean).length;
@@ -67,10 +67,10 @@ const CourseIdPage = async ({
                 initialData = {course}
                 courseId = {course.id}
             />
-            <ChaptersForm
+            {/* <ChaptersForm
                 initialData = {course}
                 courseId = {course.id}
-            />
+            /> */}
         </div>
       </div>
     </div>
