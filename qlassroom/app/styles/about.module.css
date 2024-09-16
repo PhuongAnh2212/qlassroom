@@ -1,0 +1,72 @@
+.aboutPage {
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    align-items: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: #004F2A;
+    text-align: left;
+    padding: 5% 0% 0%;
+    margin-bottom: 5%;
+}
+  
+.subtitle {
+    font-size: 1.5rem;
+    color: #004F2A;
+    margin-bottom: 1rem;
+}
+  
+.text {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+  
+.list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+  
+.listItem {
+    margin-bottom: 0.75rem;
+}
+  
+.link {
+    color: #3498db;
+    text-decoration: none;
+}
+  
+.link:hover {
+    text-decoration: underline;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+  
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+  
+    .subtitle {
+        font-size: 1.75rem;
+    }
+  
+    .text, .list {
+        font-size: 1rem;
+    }
+}

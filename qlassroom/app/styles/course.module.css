@@ -1,0 +1,78 @@
+.container {
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+.coursecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+.coursecard {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px;
+    flex: 1 1 calc(50% - 16px); /* 50% width minus the gap */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+  
+.courseheader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+  
+.providericon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+  
+  .courseinfo {
+    flex-grow: 1;
+  }
+  
+  .coursetitle {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .coursetype {
+    font-size: 0.875rem;
+    color: #01AF3E; /* Adjust the color based on your design */
+    margin-top: 4px;
+  }
+  
+  .coursedescription {
+    font-size: 1rem;
+    color: #6b7280; /* Tailwind's gray-500 */
+  }
+  
+  @media (max-width: 768px) {
+    .coursecard {
+      flex: 1 1 100%; /* Full width on smaller screens */
+    }
+  }
+
+  .courseslist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+    padding: 5% 10% 5%;
+}
+
+.coursepage {
+    padding: 5% 15% 15%;
+}
+
+.container h1 {
+    align-items: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: #004F2A;
+    padding: 5% 10% 0%;
+}
+  

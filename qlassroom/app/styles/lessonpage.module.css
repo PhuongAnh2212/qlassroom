@@ -1,0 +1,106 @@
+/* styles/LessonPage.module.css */
+
+.lessonPage {
+    display: flex;
+    padding-top: 65px;
+  }
+  
+  .toggleButton {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .lesson{
+    align-items: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: #004F2A;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    transition: transform 0.3s ease;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+  }
+  
+  .open {
+    transform: translateX(0);
+  }
+  
+  .closed {
+    transform: translateX(-100%);
+  }
+  
+  .lesson {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .lessonList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lessonList li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .lessonList .selected {
+    background-color: #cde2d8;
+    padding: 5%;
+  }
+  
+  .content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex: 1; 
+    box-sizing: border-box; 
+  }
+  
+  .splitView {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* Space between sections */
+    width: 80vw;
+  }
+  
+  .codeSection,
+  .videoSection {
+    flex: 1;
+    margin-right: 20px;
+    object-fit: contain;
+    /* height: calc(100vh - 40px); Adjust as needed */
+  }
+  .notebook{
+    width: 100%;
+    height: calc(100vh - 40px);
+  }
+
+  .videoSection iframe {
+    width: 100%;
+    height: 50%; /*Adjust the height as needed*/
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .content {
+      margin-left: 200px;
+    }
+  
+    .videoSection iframe {
+      height: 200px; /* Adjust for smaller screens */
+    }
+  }
+  
